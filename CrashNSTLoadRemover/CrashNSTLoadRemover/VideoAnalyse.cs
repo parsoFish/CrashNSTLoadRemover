@@ -16,6 +16,8 @@ namespace CrashNSTLoadRemover
         public void run(string videopath, string textpath, bool debugmode)
         {
             VideoManager vm = new VideoManager();
+            OCRManager om = new OCRManager();
+
             vm.LoadVideo(videopath);
 
             long test = vm.GetLengthOfVideoInFrames();
@@ -23,6 +25,7 @@ namespace CrashNSTLoadRemover
             for(long i = 0; i < vm.GetLengthOfVideoInFrames()-1; i++)
             {
                 Bitmap image = vm.getFrame(i);
+                string text = om.GetStringFromBitmap(image);
                 image.Dispose();
             }
         }
