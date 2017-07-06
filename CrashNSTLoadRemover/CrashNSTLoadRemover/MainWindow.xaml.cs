@@ -24,5 +24,10 @@ namespace CrashNSTLoadRemover
         {
             InitializeComponent();
         }
+
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

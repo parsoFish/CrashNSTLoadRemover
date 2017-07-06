@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CrashNSTLoadRemover"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="110.245" Width="525">
     <Grid>
-        
+        <Button x:Name="btnLoad" Content="Analyse Video" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="101" Click="btnLoad_Click"/>
+        <ProgressBar x:Name="progBar" HorizontalAlignment="Left" Height="22" Margin="11,35,0,0" VerticalAlignment="Top" Width="484"/>
+        <CheckBox x:Name="cbxDebug" Content="Enable Debug Mode" HorizontalAlignment="Left" Margin="224,10,0,0" VerticalAlignment="Top" Height="20" Width="135"/>
+
     </Grid>
 </Window>
