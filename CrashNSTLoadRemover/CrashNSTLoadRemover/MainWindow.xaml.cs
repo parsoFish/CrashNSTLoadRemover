@@ -27,7 +27,8 @@ namespace CrashNSTLoadRemover
 
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
-
+            VideoAnalyse va = new VideoAnalyse();
+            va.run(@"G:\\video.mp4", "", false);
         }
     }
 }
